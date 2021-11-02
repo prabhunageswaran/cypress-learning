@@ -20,10 +20,11 @@
     "test2": "npm run chrome -- -s cypress/integration/2-advanced-examples/actions.spec.js",
     "test3": "npm run test1 -- --group group1 --ci-build-id '1' & npm run test2 -- --group group2 --ci-build-id '1'",
    
-    "dashBoard": "npm run preReport & npm run chrome -- -s cypress/integration/1-getting-started/* & npm run postReport",
+    "dashBoard": "npm run preReport & npm run chrome -- --record --key d9e6697f-09e1-4814-a9c8-6037d186cb73 -s cypress/integration/1-getting-started/* & npm run postReport",
+    "jenkins": "npm run preReport & npm run chrome -- -s cypress/integration/1-getting-started/* & npm run postReport",
     "dashboard1": "npm run test1 -- --record --key d9e6697f-09e1-4814-a9c8-6037d186cb73",
     "dashboard2": "npm run test3 -- --record --key d9e6697f-09e1-4814-a9c8-6037d186cb73"
-
+    
   
   },
   "author": "",

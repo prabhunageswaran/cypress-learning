@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage('Publish HTML Report'){
 				steps{
-					publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: false, reportDir: 'mochawesome-report', reportFiles: 'summaryreport.html', reportName: 'SUMMARYREPORT', reportTitles: ''])
+					publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'mochawesome-report', reportFiles: 'summaryreport.html', reportName: 'SUMMARYREPORT', reportTitles: ''])
 				}
 		}
 	}
